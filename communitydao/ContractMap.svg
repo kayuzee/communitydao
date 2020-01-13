@@ -1,0 +1,227 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [  <!ENTITY quot "&#34;">  <!ENTITY amp "&#38;">  <!ENTITY apos "&#39;">  <!ENTITY lt "&#60;">  <!ENTITY gt "&#62;">  <!ENTITY nbsp "&#160;">  <!ENTITY iexcl "&#161;">  <!ENTITY cent "&#162;">  <!ENTITY pound "&#163;">  <!ENTITY curren "&#164;">  <!ENTITY yen "&#165;">  <!ENTITY brvbar "&#166;">  <!ENTITY sect "&#167;">  <!ENTITY uml "&#168;">  <!ENTITY copy "&#169;">  <!ENTITY ordf "&#170;">  <!ENTITY laquo "&#171;">  <!ENTITY not "&#172;">  <!ENTITY shy "&#173;">  <!ENTITY reg "&#174;">  <!ENTITY macr "&#175;">  <!ENTITY deg "&#176;">  <!ENTITY plusmn "&#177;">  <!ENTITY sup2 "&#178;">  <!ENTITY sup3 "&#179;">  <!ENTITY acute "&#180;">  <!ENTITY micro "&#181;">  <!ENTITY para "&#182;">  <!ENTITY middot "&#183;">  <!ENTITY cedil "&#184;">  <!ENTITY sup1 "&#185;">  <!ENTITY ordm "&#186;">  <!ENTITY raquo "&#187;">  <!ENTITY frac14 "&#188;">  <!ENTITY frac12 "&#189;">  <!ENTITY frac34 "&#190;">  <!ENTITY iquest "&#191;">  <!ENTITY Agrave "&#192;">  <!ENTITY Aacute "&#193;">  <!ENTITY Acirc "&#194;">  <!ENTITY Atilde "&#195;">  <!ENTITY Auml "&#196;">  <!ENTITY Aring "&#197;">  <!ENTITY AElig "&#198;">  <!ENTITY Ccedil "&#199;">  <!ENTITY Egrave "&#200;">  <!ENTITY Eacute "&#201;">  <!ENTITY Ecirc "&#202;">  <!ENTITY Euml "&#203;">  <!ENTITY Igrave "&#204;">  <!ENTITY Iacute "&#205;">  <!ENTITY Icirc "&#206;">  <!ENTITY Iuml "&#207;">  <!ENTITY ETH "&#208;">  <!ENTITY Ntilde "&#209;">  <!ENTITY Ograve "&#210;">  <!ENTITY Oacute "&#211;">  <!ENTITY Ocirc "&#212;">  <!ENTITY Otilde "&#213;">  <!ENTITY Ouml "&#214;">  <!ENTITY times "&#215;">  <!ENTITY Oslash "&#216;">  <!ENTITY Ugrave "&#217;">  <!ENTITY Uacute "&#218;">  <!ENTITY Ucirc "&#219;">  <!ENTITY Uuml "&#220;">  <!ENTITY Yacute "&#221;">  <!ENTITY THORN "&#222;">  <!ENTITY szlig "&#223;">  <!ENTITY agrave "&#224;">  <!ENTITY aacute "&#225;">  <!ENTITY acirc "&#226;">  <!ENTITY atilde "&#227;">  <!ENTITY auml "&#228;">  <!ENTITY aring "&#229;">  <!ENTITY aelig "&#230;">  <!ENTITY ccedil "&#231;">  <!ENTITY egrave "&#232;">  <!ENTITY eacute "&#233;">  <!ENTITY ecirc "&#234;">  <!ENTITY euml "&#235;">  <!ENTITY igrave "&#236;">  <!ENTITY iacute "&#237;">  <!ENTITY icirc "&#238;">  <!ENTITY iuml "&#239;">  <!ENTITY eth "&#240;">  <!ENTITY ntilde "&#241;">  <!ENTITY ograve "&#242;">  <!ENTITY oacute "&#243;">  <!ENTITY ocirc "&#244;">  <!ENTITY otilde "&#245;">  <!ENTITY ouml "&#246;">  <!ENTITY divide "&#247;">  <!ENTITY oslash "&#248;">  <!ENTITY ugrave "&#249;">  <!ENTITY uacute "&#250;">  <!ENTITY ucirc "&#251;">  <!ENTITY uuml "&#252;">  <!ENTITY yacute "&#253;">  <!ENTITY thorn "&#254;">  <!ENTITY yuml "&#255;">  <!ENTITY OElig "&#338;">  <!ENTITY oelig "&#339;">  <!ENTITY Scaron "&#352;">  <!ENTITY scaron "&#353;">  <!ENTITY Yuml "&#376;">  <!ENTITY fnof "&#402;">  <!ENTITY circ "&#710;">  <!ENTITY tilde "&#732;">  <!ENTITY Alpha "&#913;">  <!ENTITY Beta "&#914;">  <!ENTITY Gamma "&#915;">  <!ENTITY Delta "&#916;">  <!ENTITY Epsilon "&#917;">  <!ENTITY Zeta "&#918;">  <!ENTITY Eta "&#919;">  <!ENTITY Theta "&#920;">  <!ENTITY Iota "&#921;">  <!ENTITY Kappa "&#922;">  <!ENTITY Lambda "&#923;">  <!ENTITY Mu "&#924;">  <!ENTITY Nu "&#925;">  <!ENTITY Xi "&#926;">  <!ENTITY Omicron "&#927;">  <!ENTITY Pi "&#928;">  <!ENTITY Rho "&#929;">  <!ENTITY Sigma "&#931;">  <!ENTITY Tau "&#932;">  <!ENTITY Upsilon "&#933;">  <!ENTITY Phi "&#934;">  <!ENTITY Chi "&#935;">  <!ENTITY Psi "&#936;">  <!ENTITY Omega "&#937;">  <!ENTITY alpha "&#945;">  <!ENTITY beta "&#946;">  <!ENTITY gamma "&#947;">  <!ENTITY delta "&#948;">  <!ENTITY epsilon "&#949;">  <!ENTITY zeta "&#950;">  <!ENTITY eta "&#951;">  <!ENTITY theta "&#952;">  <!ENTITY iota "&#953;">  <!ENTITY kappa "&#954;">  <!ENTITY lambda "&#955;">  <!ENTITY mu "&#956;">  <!ENTITY nu "&#957;">  <!ENTITY xi "&#958;">  <!ENTITY omicron "&#959;">  <!ENTITY pi "&#960;">  <!ENTITY rho "&#961;">  <!ENTITY sigmaf "&#962;">  <!ENTITY sigma "&#963;">  <!ENTITY tau "&#964;">  <!ENTITY upsilon "&#965;">  <!ENTITY phi "&#966;">  <!ENTITY chi "&#967;">  <!ENTITY psi "&#968;">  <!ENTITY omega "&#969;">  <!ENTITY thetasym "&#977;">  <!ENTITY upsih "&#978;">  <!ENTITY piv "&#982;">  <!ENTITY ensp "&#8194;">  <!ENTITY emsp "&#8195;">  <!ENTITY thinsp "&#8201;">  <!ENTITY zwnj "&#8204;">  <!ENTITY zwj "&#8205;">  <!ENTITY lrm "&#8206;">  <!ENTITY rlm "&#8207;">  <!ENTITY ndash "&#8211;">  <!ENTITY mdash "&#8212;">  <!ENTITY lsquo "&#8216;">  <!ENTITY rsquo "&#8217;">  <!ENTITY sbquo "&#8218;">  <!ENTITY ldquo "&#8220;">  <!ENTITY rdquo "&#8221;">  <!ENTITY bdquo "&#8222;">  <!ENTITY dagger "&#8224;">  <!ENTITY Dagger "&#8225;">  <!ENTITY bull "&#8226;">  <!ENTITY hellip "&#8230;">  <!ENTITY permil "&#8240;">  <!ENTITY prime "&#8242;">  <!ENTITY Prime "&#8243;">  <!ENTITY lsaquo "&#8249;">  <!ENTITY rsaquo "&#8250;">  <!ENTITY oline "&#8254;">  <!ENTITY frasl "&#8260;">  <!ENTITY euro "&#8364;">  <!ENTITY image "&#8465;">  <!ENTITY weierp "&#8472;">  <!ENTITY real "&#8476;">  <!ENTITY trade "&#8482;">  <!ENTITY alefsym "&#8501;">  <!ENTITY larr "&#8592;">  <!ENTITY uarr "&#8593;">  <!ENTITY rarr "&#8594;">  <!ENTITY darr "&#8595;">  <!ENTITY harr "&#8596;">  <!ENTITY crarr "&#8629;">  <!ENTITY lArr "&#8656;">  <!ENTITY uArr "&#8657;">  <!ENTITY rArr "&#8658;">  <!ENTITY dArr "&#8659;">  <!ENTITY hArr "&#8660;">  <!ENTITY forall "&#8704;">  <!ENTITY part "&#8706;">  <!ENTITY exist "&#8707;">  <!ENTITY empty "&#8709;">  <!ENTITY nabla "&#8711;">  <!ENTITY isin "&#8712;">  <!ENTITY notin "&#8713;">  <!ENTITY ni "&#8715;">  <!ENTITY prod "&#8719;">  <!ENTITY sum "&#8721;">  <!ENTITY minus "&#8722;">  <!ENTITY lowast "&#8727;">  <!ENTITY radic "&#8730;">  <!ENTITY prop "&#8733;">  <!ENTITY infin "&#8734;">  <!ENTITY ang "&#8736;">  <!ENTITY and "&#8743;">  <!ENTITY or "&#8744;">  <!ENTITY cap "&#8745;">  <!ENTITY cup "&#8746;">  <!ENTITY int "&#8747;">  <!ENTITY there4 "&#8756;">  <!ENTITY sim "&#8764;">  <!ENTITY cong "&#8773;">  <!ENTITY asymp "&#8776;">  <!ENTITY ne "&#8800;">  <!ENTITY equiv "&#8801;">  <!ENTITY le "&#8804;">  <!ENTITY ge "&#8805;">  <!ENTITY sub "&#8834;">  <!ENTITY sup "&#8835;">  <!ENTITY nsub "&#8836;">  <!ENTITY sube "&#8838;">  <!ENTITY supe "&#8839;">  <!ENTITY oplus "&#8853;">  <!ENTITY otimes "&#8855;">  <!ENTITY perp "&#8869;">  <!ENTITY sdot "&#8901;">  <!ENTITY lceil "&#8968;">  <!ENTITY rceil "&#8969;">  <!ENTITY lfloor "&#8970;">  <!ENTITY rfloor "&#8971;">  <!ENTITY lang "&#9001;">  <!ENTITY rang "&#9002;">  <!ENTITY loz "&#9674;">  <!ENTITY spades "&#9824;">  <!ENTITY clubs "&#9827;">  <!ENTITY hearts "&#9829;">  <!ENTITY diams "&#9830;"> ]><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0.00 0.00 496.66 1141.00">
+<g id="graph0" class="graph" transform="translate(12.887732468665291,1123.1415144588595) scale(0.9605948639534779)" data-name="G">
+
+<polygon fill="#2e3e56" stroke="transparent" points="-4,4 -4,-1137 492.6606,-1137 492.6606,4 -4,4" style=""></polygon>
+<g id="clust1" class="cluster">
+<title style="">clusterCommunityDAO</title>
+<path fill="#445773" stroke="#445773" d="M233.5885,-8C233.5885,-8 468.6606,-8 468.6606,-8 474.6606,-8 480.6606,-14 480.6606,-20 480.6606,-20 480.6606,-667 480.6606,-667 480.6606,-673 474.6606,-679 468.6606,-679 468.6606,-679 233.5885,-679 233.5885,-679 227.5885,-679 221.5885,-673 221.5885,-667 221.5885,-667 221.5885,-20 221.5885,-20 221.5885,-14 227.5885,-8 233.5885,-8" style=""></path>
+<text text-anchor="middle" x="351.1245" y="-662.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">CommunityDAO</text>
+</g>
+<g id="clust2" class="cluster">
+<title style="">clusterSafeMath</title>
+<path fill="#445773" stroke="#445773" d="M66.5886,-386C66.5886,-386 143.9998,-386 143.9998,-386 149.9998,-386 155.9998,-392 155.9998,-398 155.9998,-398 155.9998,-667 155.9998,-667 155.9998,-673 149.9998,-679 143.9998,-679 143.9998,-679 66.5886,-679 66.5886,-679 60.5886,-679 54.5886,-673 54.5886,-667 54.5886,-667 54.5886,-398 54.5886,-398 54.5886,-392 60.5886,-386 66.5886,-386" style=""></path>
+<text text-anchor="middle" x="105.2942" y="-662.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">SafeMath &nbsp;(lib)</text>
+</g>
+<g id="clust3" class="cluster">
+<title style="">clusterOwnable</title>
+<path fill="#445773" stroke="#445773" d="M20,-687C20,-687 434.844,-687 434.844,-687 440.844,-687 446.844,-693 446.844,-699 446.844,-699 446.844,-976 446.844,-976 446.844,-982 440.844,-988 434.844,-988 434.844,-988 20,-988 20,-988 14,-988 8,-982 8,-976 8,-976 8,-699 8,-699 8,-693 14,-687 20,-687" style=""></path>
+<text text-anchor="middle" x="227.422" y="-971.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Ownable</text>
+</g>
+<g id="clust4" class="cluster">
+<title style="">cluster_01</title>
+<polygon fill="#2e3e56" stroke="#000000" points="31.7942,-996 31.7942,-1125 386.1245,-1125 386.1245,-996 31.7942,-996" style=""></polygon>
+<text text-anchor="middle" x="208.9594" y="-1108.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Legend</text>
+</g>
+<!-- CommunityDAO.createSubmission -->
+<g id="node1" class="node" data-name="CommunityDAO.createSubmission">
+
+<ellipse fill="#ffbdb9" stroke="#a52a2a" stroke-width="3" cx="351.1245" cy="-628" rx="75.2471" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-623.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">createSubmission</text>
+</g>
+<!-- CommunityDAO.changewhitelistfee -->
+<g id="node2" class="node" data-name="CommunityDAO.changewhitelistfee">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="351.1245" cy="-574" rx="79.2991" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-569.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">changewhitelistfee</text>
+</g>
+<!-- CommunityDAO.lowerSubmissionFee -->
+<g id="node3" class="node" data-name="CommunityDAO.lowerSubmissionFee">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="351.1245" cy="-520" rx="88.0096" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-515.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">lowerSubmissionFee</text>
+</g>
+<!-- CommunityDAO.changeDurationDays -->
+<g id="node4" class="node" data-name="CommunityDAO.changeDurationDays">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="351.1245" cy="-466" rx="88.5372" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-461.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">changeDurationDays</text>
+</g>
+<!-- CommunityDAO.changeDurationSubmissions -->
+<g id="node5" class="node" data-name="CommunityDAO.changeDurationSubmissions">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="351.1245" cy="-412" rx="117.5097" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-407.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">changeDurationSubmissions</text>
+</g>
+<!-- CommunityDAO.whitelistAddress -->
+<g id="node6" class="node" data-name="CommunityDAO.whitelistAddress">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.1245" cy="-358" rx="71.8134" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-353.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">whitelistAddress</text>
+</g>
+<!-- CommunityDAO.getSubmission -->
+<g id="node7" class="node" data-name="CommunityDAO.getSubmission">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="351.1245" cy="-304" rx="63.754000000000005" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-299.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getSubmission</text>
+</g>
+<!-- CommunityDAO.getAllSubmissionHashes -->
+<g id="node8" class="node" data-name="CommunityDAO.getAllSubmissionHashes">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="351.1245" cy="-250" rx="104.2002" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-245.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getAllSubmissionHashes</text>
+</g>
+<!-- CommunityDAO.getSubmissionCount -->
+<g id="node9" class="node" data-name="CommunityDAO.getSubmissionCount">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="351.1245" cy="-196" rx="87.4725" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-191.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getSubmissionCount</text>
+</g>
+<!-- CommunityDAO.vote -->
+<g id="node10" class="node" data-name="CommunityDAO.vote">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="351.1245" cy="-142" rx="23.7661" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-137.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">vote</text>
+</g>
+<!-- CommunityDAO.createProposal -->
+<g id="node11" class="node" data-name="CommunityDAO.createProposal">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="351.1245" cy="-88" rx="63.6904" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-83.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">createProposal</text>
+</g>
+<!-- CommunityDAO.&lt;Fallback&gt; -->
+<g id="node12" class="node" data-name="CommunityDAO.&lt;Fallback&gt;">
+
+<ellipse fill="#ffbdb9" stroke="#a52a2a" stroke-width="3" cx="351.1245" cy="-34" rx="51.2988" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-29.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&lt;Fallback&gt;</text>
+</g>
+<!-- SafeMath.mul -->
+<g id="node13" class="node" data-name="SafeMath.mul">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="104.7942" cy="-628" rx="22.9375" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-623.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">mul</text>
+</g>
+<!-- SafeMath.div -->
+<g id="node14" class="node" data-name="SafeMath.div">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="104.7942" cy="-574" rx="22.9375" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-569.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">div</text>
+</g>
+<!-- SafeMath.sub -->
+<g id="node15" class="node" data-name="SafeMath.sub">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="104.7942" cy="-520" rx="22.9375" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-515.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">sub</text>
+</g>
+<!-- SafeMath.add -->
+<g id="node16" class="node" data-name="SafeMath.add">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="104.7942" cy="-466" rx="22.9375" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-461.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">add</text>
+</g>
+<!-- SafeMath.mod -->
+<g id="node17" class="node" data-name="SafeMath.mod">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="104.7942" cy="-412" rx="24.3502" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-407.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">mod</text>
+</g>
+<!-- Ownable.&lt;Constructor&gt; -->
+<g id="node18" class="node" data-name="Ownable.&lt;Constructor&gt;">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="104.7942" cy="-937" rx="63.4794" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-932.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&lt;Constructor&gt;</text>
+</g>
+<!-- Ownable.owner -->
+<g id="node19" class="node" data-name="Ownable.owner">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="104.7942" cy="-883" rx="31.270899999999997" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-878.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">owner</text>
+</g>
+<!-- Ownable.onlyOwner -->
+<g id="node20" class="node" data-name="Ownable.onlyOwner">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="159.6676001750198,-819.2269326388889 159.6676001750198,-830.7730673611111 127.52346289787232,-838.9375 82.06494406253074,-838.9375 49.92089989229551,-830.7730673611111 49.92089989229551,-819.2269326388889 82.06494406253074,-811.0625 127.52346289787232,-811.0625 159.6676001750198,-819.2269326388889 " style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="163.66549954887662,-816.50659375 163.66549954887662,-833.49340625 128.18854109002683,-842.9375 81.39995848051947,-842.9375 45.92300002166969,-833.49340625 45.92300002166969,-816.50659375 81.39995848051947,-807.0625 128.18854109002683,-807.0625 163.66549954887662,-816.50659375 " style=""></polygon>
+<text text-anchor="middle" x="104.7942" y="-820.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onlyOwner</text>
+</g>
+<!-- Ownable.isOwner -->
+<g id="node21" class="node" data-name="Ownable.isOwner">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.1245" cy="-825" rx="39.9358" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-820.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">isOwner</text>
+</g>
+<!-- Ownable.onlyOwner&#45;&gt;Ownable.isOwner -->
+<g id="edge2" class="edge" data-name="Ownable.onlyOwner->Ownable.isOwner">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M167.9105,-825C207.7814,-825 258.7679,-825 296.8261,-825" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="297.1977,-828.5001 307.1977,-825 297.1977,-821.5001 297.1977,-828.5001" style=""></polygon>
+</g>
+<!-- Ownable.renounceOwnership -->
+<g id="node22" class="node" data-name="Ownable.renounceOwnership">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="104.7942" cy="-767" rx="84.5264" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-762.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">renounceOwnership</text>
+</g>
+<!-- Ownable.transferOwnership -->
+<g id="node23" class="node" data-name="Ownable.transferOwnership">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="104.7942" cy="-713" rx="78.7195" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-708.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">transferOwnership</text>
+</g>
+<!-- Ownable._transferOwnership -->
+<g id="node24" class="node" data-name="Ownable._transferOwnership">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.1245" cy="-713" rx="83.8769" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="351.1245" y="-708.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_transferOwnership</text>
+</g>
+<!-- Ownable.transferOwnership&#45;&gt;Ownable._transferOwnership -->
+<g id="edge3" class="edge" data-name="Ownable.transferOwnership->Ownable._transferOwnership">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M187.847,-713C208.8274,-713 231.5509,-713 253.189,-713" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="253.3767,-716.5001 263.3766,-713 253.3766,-709.5001 253.3767,-716.5001" style=""></polygon>
+</g>
+<!-- CommunityDAO. -->
+<g id="node25" class="node" data-name="CommunityDAO.">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="104.7942" cy="-358" rx="76.4585" ry="13.9375" style=""></ellipse>
+<text text-anchor="middle" x="104.7942" y="-353.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">CommunityDAO.</text>
+</g>
+<!-- CommunityDAO.&#45;&gt;CommunityDAO.whitelistAddress -->
+<g id="edge1" class="edge" data-name="CommunityDAO.->CommunityDAO.whitelistAddress">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M185.452,-358C210.8454,-358 238.9864,-358 264.7601,-358" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="264.8869,-361.5001 274.8868,-358 264.8868,-354.5001 264.8869,-361.5001" style=""></polygon>
+</g>
+<!-- key -->
+<g id="node26" class="node" data-name="key">
+
+<polygon fill="#edad56" stroke="transparent" stroke-width="3" points="165.73170005607605,-1087.9375 43.85670005607605,-1087.9375 43.85670005607605,-1008.0625 165.73170005607605,-1008.0625 165.73170005607605,-1087.9375 " style=""></polygon>
+<text text-anchor="start" x="89.4302" y="-1073.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Internal Call</text>
+<text text-anchor="start" x="85.5382" y="-1053.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">External Call</text>
+<text text-anchor="start" x="62.9996" y="-1033.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Defined Contract</text>
+<text text-anchor="start" x="49.3969" y="-1013.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Undefined Contract</text>
+</g>
+<!-- key2 -->
+<g id="node27" class="node" data-name="key2">
+
+<polygon fill="#edad56" stroke="transparent" stroke-width="3" points="374.06200176323784,-1087.9375 328.18700176323784,-1087.9375 328.18700176323784,-1008.0625 374.06200176323784,-1008.0625 374.06200176323784,-1087.9375 " style=""></polygon>
+<text text-anchor="start" x="338.8836" y="-1073.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<text text-anchor="start" x="338.8836" y="-1053.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<polygon fill="#445773" stroke="transparent" points="341.18700340053016,-1032.0625 341.18700340053016,-1043.9375 361.06200340053016,-1043.9375 361.06200340053016,-1032.0625 341.18700340053016,-1032.0625 " style=""></polygon>
+<text text-anchor="start" x="338.8836" y="-1033.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<polygon fill="none" stroke="#e8726d" points="343.18700396728514,-1014.0625 343.18700396728514,-1021.9375 359.06200396728514,-1021.9375 359.06200396728514,-1014.0625 343.18700396728514,-1014.0625 " style=""></polygon>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge4" class="edge" data-name="key->key2">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M161.7942,-1078C236.2183,-1078 257.3318,-1078 326.9662,-1078" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="327.1246,-1081.5001 337.1245,-1078 327.1245,-1074.5001 327.1246,-1081.5001" style=""></polygon>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge5" class="edge" data-name="key->key2">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M161.7942,-1058C236.2183,-1058 257.3318,-1058 326.9662,-1058" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="327.1246,-1061.5001 337.1245,-1058 327.1245,-1054.5001 327.1246,-1061.5001" style=""></polygon>
+</g>
+</g>
+</svg>
