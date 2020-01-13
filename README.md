@@ -1,8 +1,8 @@
-# Bileto
+# CommunityDAO
 
-[Bileto](https://en.wiktionary.org/wiki/bileto) is a simple decentralized online ticket store on Ethereum.
+CommunityDAO is a simple DAO for organizing community ideas.
 
-- [Bileto](#bileto)
+- [CommunityDAO](#communitydao)
   - [Introduction](#introduction)
   - [High-level Solution](#high-level-solution)
   - [Installation](#installation)
