@@ -50,6 +50,11 @@ The diagram below depicts the contract and its functions. It uses the Safe Math 
 
 ![CommunityDAO Contract Map](ContractMap.svg)
 
+Here are some sample screenshots:
+![Screenshot 2](screen2.png)
+![Screenshot 1](screen1.png)
+
+
 ## Installation
 
 The source code of at ... 
