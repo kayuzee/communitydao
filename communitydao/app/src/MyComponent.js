@@ -110,8 +110,7 @@ export default ({ accounts }) => (
       <strong>Get proposal details (beta - coming soon!)</strong>
       <p>Right now - this just shows for the first item in the index</p>
       <p></p>
-      {/*<ContractData contract="CommunityDAO" method="proposals" methodArgs={[ 0 ]} /> */} 
-      <ProposalSearch />
+      {/*<ProposalSearch />*/} 
       
     </Card>
     </div> 

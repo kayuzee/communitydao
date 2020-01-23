@@ -12,11 +12,9 @@ contract CommunityDAO is Ownable {
     mapping(address => bool) whitelist;
     uint256 public whitelistedNumber = 0;
     mapping(address => bool) blacklist;
-    event Whitelisted(address addr, bool status);
-    event Blacklisted(address addr, bool status);
+
 
     //Submission Fees
-    //TO DO: Only for actual submission and goes to community development pool
     
     uint256 public whitelistfee = 10000000000000000; // in Wei, this is 0.01 ether
     uint256 public submissionZeroFee = 1000; //ADDED
@@ -25,20 +23,20 @@ contract CommunityDAO is Ownable {
     event SubmissionCommissionChanged(uint256 newFee);
     event WhitelistFeeChanged(uint256 newFee);
     event SubmissionFeeChanged(uint256 newFee); //ADDED
+    event Whitelisted(address addr, bool status);
+    event Blacklisted(address addr, bool status);
+    event SubmissionCreated(uint256 index, bytes content, address submitter);
+    event ProposalAdded(uint256 id, uint8 typeFlag, bytes32 hash, string description, address submitter);
+    event ProposalExecuted(uint256 id);
+    event Voted(address voter, bool vote, string justification);
+    mapping (bytes32 => Submission) public submissions; //REORG
+    bytes32[] public submissionIndex; //REORG
 
-    uint256 public durationDays = 21; // duration of story's chapter in days
-    uint256 public durationSubmissions = 1000; // duration of story's chapter in entries
-    
     struct Submission {
     bytes content;
     uint256 index;
     address submitter;
     }
-    
-    event SubmissionCreated(uint256 index, bytes content, address submitter);
-    mapping (bytes32 => Submission) public submissions; //REORG
-    bytes32[] public submissionIndex; //REORG
-    
     
     // Structs for Voting function
     struct Proposal {
@@ -56,9 +54,7 @@ contract CommunityDAO is Ownable {
 
     Proposal[] public proposals;
     uint256 proposalCount = 0;
-    event ProposalAdded(uint256 id, uint8 typeFlag, bytes32 hash, string description, address submitter);
-    event ProposalExecuted(uint256 id);
-    event Voted(address voter, bool vote, string justification);
+
     
     struct Vote {
         bool inSupport;
@@ -66,7 +62,6 @@ contract CommunityDAO is Ownable {
         string justification;
     }
     
-
     // TO FIX? Bytes as call data needs to be put in a special way https://ethereum.stackexchange.com/questions/48092/solidity-error-when-encoding-arguments-to-call-a-function-with-bytes32-type-para
     function createSubmission(bytes calldata _content) external payable { 
         require(whitelist[msg.sender], "Must be whitelisted");
@@ -104,16 +99,6 @@ contract CommunityDAO is Ownable {
         require(_fee < submissionZeroFee, "New fee must be lower than old fee.");
         submissionZeroFee = _fee;
         emit SubmissionFeeChanged(_fee);
-    }
-
-    function changeDurationDays(uint256 _days) onlyOwner external {
-        require(_days >= 1);
-        durationDays = _days;
-    }
-
-    function changeDurationSubmissions(uint256 _subs) onlyOwner external {
-        require(_subs > 99);
-        durationSubmissions = _subs;
     }
     
      // Functions to Whitelist address
