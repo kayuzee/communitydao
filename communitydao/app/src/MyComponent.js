@@ -7,11 +7,11 @@ import {
 import { Card,Flex, Box } from 'rimble-ui';
 import LiteAccountData from "./components/LiteAccountData";
 import SubmissionSearch from "./components/SubmissionSearch";
+import ProposalSearch from "./components/ProposalSearch";
 import logo from "./logo.png";
-
-
+import Web3 from "web3";
 export default ({ accounts }) => (
-  
+
 
 
   <div className="App">
@@ -21,6 +21,7 @@ export default ({ accounts }) => (
       <img src={logo} alt="drizzle-logo" />
       <h1>CommunityDAO</h1>
       <p>The CommunityDAO is a Contract and interface that can be used for your community.</p>
+      Web3 Call Test (Web3.Version): {Web3.version}
     </div>
 
     <div className="section">
@@ -80,7 +81,7 @@ export default ({ accounts }) => (
     <strong>Idea Details </strong>
       <p></p>
       What do you mean you cant read a hash? Click on a hash on the left to see the submission details
-      <ContractData contract="CommunityDAO" method="getSubmission" methodArgs={['0x13a275c00febdf37b585402be81f12be04c897317e154f808f836214dcee6279' ]}/>
+      <SubmissionSearch />
       <p>Note: This retrieval is under development and is not fully functional - you are going to have to learn how to read a hash!(I havent figured out how to use React objects into Drizzle...yet)</p>
       </Box>
   
@@ -106,17 +107,9 @@ export default ({ accounts }) => (
       <strong>Get proposal details (beta - coming soon!)</strong>
       <p>Right now - this just shows for the first item in the index</p>
       <p></p>
-     {/* <ContractData contract="CommunityDAO" method="proposals" methodArgs={[ 0 ]} /> */}
+      {/*<ContractData contract="CommunityDAO" method="proposals" methodArgs={[ 0 ]} /> */} 
+      <ProposalSearch />
       
-    </Card>
-    </div> 
-
-    <div className="section">
-    <Card bg="black" color="white" maxWidth={"700px"}>
-      <strong>Get Submission TEST</strong>
-      <p>
-      <SubmissionSearch />
-      </p>
     </Card>
     </div> 
 

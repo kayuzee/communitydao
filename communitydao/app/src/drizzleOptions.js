@@ -8,7 +8,7 @@ const options = {
   },
   contracts: [CommunityDAO],
   events: {
-    CommunityDAO: ["SubmissionCreated"],
+    CommunityDAO: ["Whitelisted","Blacklisted","SubmissionCommissionChanged","WhitelistFeeChanged","SubmissionFeeChanged","SubmissionCreated","ProposalAdded","ProposalExecuted","Voted"],
   },
   polls: {
     accounts: 1500,
