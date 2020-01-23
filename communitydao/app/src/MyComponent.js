@@ -13,15 +13,18 @@ import Web3 from "web3";
 export default ({ accounts }) => (
 
 
-
   <div className="App">
         
 
-    <div>
+    <div >
       <img src={logo} alt="drizzle-logo" />
       <h1>CommunityDAO</h1>
       <p>The CommunityDAO is a Contract and interface that can be used for your community.</p>
       Web3 Call Test (Web3.Version): {Web3.version}
+      <p></p>
+      <Card bg="white" color="black" maxWidth={"700px"}>
+      Current Address: <LiteAccountData accountIndex={0}/>
+      </Card>
     </div>
 
     <div className="section">
@@ -112,18 +115,6 @@ export default ({ accounts }) => (
       
     </Card>
     </div> 
-
-    <div className="section">
-    <Card bg="black" color="white" maxWidth={"600px"}>
-      <h2>Current address</h2>
-      <LiteAccountData accountIndex={0}/>
-      <p></p>
-    
-      <p>
-      </p>
-      
-      </Card>
-    </div>
 
   </div>
 );

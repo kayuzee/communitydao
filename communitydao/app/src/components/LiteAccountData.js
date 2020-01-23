@@ -1,7 +1,7 @@
 import { drizzleConnect } from "@drizzle/react-plugin";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import { EthAddress } from 'rimble-ui';
 class LiteAccountData extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +31,8 @@ class LiteAccountData extends Component {
 
     return (
       <div>
-        <h4>{address}</h4>
+        {/*<h4>{address}</h4>*/}
+        <EthAddress address={address} textLabels />
       </div>
     );
   }
