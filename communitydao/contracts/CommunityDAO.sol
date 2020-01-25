@@ -118,8 +118,8 @@ contract CommunityDAO is Ownable {
     }
     
     // Get indexes/submission info
-    function getSubmission(bytes32 hash) public view returns (bytes memory content, address submitter) {
-        return (submissions[hash].content, submissions[hash].submitter);
+    function getSubmission(bytes32 hash) public view returns (string memory content, address submitter) {
+        return (string(submissions[hash].content), submissions[hash].submitter);
     }
 
     function getAllSubmissionHashes() public view returns (bytes32[] memory) {
@@ -175,7 +175,6 @@ contract CommunityDAO is Ownable {
         emit ProposalAdded(proposalId, 1, _hash, _description, msg.sender);
         proposalCount = proposalId + 1;
     }
-    
     //Fallback
     function() external payable {
 
