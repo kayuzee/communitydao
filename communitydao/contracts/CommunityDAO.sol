@@ -53,7 +53,7 @@ contract CommunityDAO is Ownable {
     }
 
     Proposal[] public proposals;
-    uint256 proposalCount = 0;
+    uint256 public proposalCount = 0;
 
     
     struct Vote {
@@ -86,9 +86,9 @@ contract CommunityDAO is Ownable {
     
         //nonDeletedSubmissions += 1;
     }
-    function getProposal(uint256 _proposalId) public view returns (string memory description, int256 votes){
+    function getProposal(uint256 _proposalId) public view returns (string memory description, int256 votes, bool passed ){
         require(proposals.length > 0, "Must have at least one proposal");
-        return (proposals[_proposalId].description,proposals[_proposalId].currentResult);
+        return (proposals[_proposalId].description,proposals[_proposalId].currentResult, proposals[_proposalId].executed);
     }
     
 

@@ -24,9 +24,9 @@ class ProposalSearch extends React.Component {
       if(this.state.mode=== 'no_proposals'){
         return(
           <div>
-            <strong>No Proposals</strong>
-            <p>Enter ProposalId to search</p>
-            
+            <strong>Proposal Count <ContractData contract="CommunityDAO" method="proposalCount"/></strong>
+            <p>Enter ProposalId to search (first proposal = 0)</p>
+
             <Input type="text" required={true} placeholder="Proposal Id" value={this.state.value} onChange={this.handleChange}/>
             </div>
         );
