@@ -2,17 +2,17 @@ import React from "react";
 import { ContractData } from "@drizzle/react-components";
 import { Input, Button } from 'rimble-ui';
 
-
 class ProposalSearch extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: 'undefined', mode:'no_proposals'};
+      this.state = {value: '', mode:'no_proposals'};
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
       this.setState({value: event.target.value});
+      this.setState({mode: 'active'});
     }
   
     handleSubmit(event) {
@@ -25,6 +25,9 @@ class ProposalSearch extends React.Component {
         return(
           <div>
             <strong>No Proposals</strong>
+            <p>Enter ProposalId to search</p>
+            
+            <Input type="text" required={true} placeholder="Proposal Id" value={this.state.value} onChange={this.handleChange}/>
             </div>
         );
       } else {

@@ -66,11 +66,10 @@ export default ({ accounts }) => (
       <div className='normal'>
     <Flex>
     <Box p={3} width={1 / 3} color="black" bg="white">
-      <h2>Step 2</h2>
-      <strong>Register a new community idea </strong>
+      <h2>Step 2: Register a new community idea </h2>
       <p>Sorry, I am still learning - your submission has to be in hex (e.g 0x6e656f) :)</p>
       <p> Here are a couple of starters</p>
-      <p>New Community Garden: 0xe8d82b8bb7bc5a536d4f0bb8578a3eb6567a023018fa203c7a37a7482ba14087</p>
+      <p>New Community Garden: 0x4e657720436f6d6d756e6974792047617264656e</p>
       <p>Add 500$ to member budget: 0x416464203530302420746f206d656d62657220627564676574 </p>
       <strong> Enter one of these below</strong>
       <p></p>
@@ -102,14 +101,14 @@ export default ({ accounts }) => (
   <div className= "normal" >
   <Flex>
     <Box p={3} width={1/3} color="black" bg="white">
-    <strong>Step 3: Create Community Proposal</strong>
+    <h2>Step 3: Create Community Proposal</h2>
     <p> See an idea you like? Put it up for a proposal</p>
     <p> Use the hash of the idea you like, add a description and then click submit</p>
     <p> For example, if you wanted a new community garden you would put the hash of '0xe8d82b8bb7bc5a536d4f0bb8578a3eb6567a023018fa203c7a37a7482ba14087' and a description of 'I vote for a new garden in Q4 2020'</p>
       <Contract_Form contract="CommunityDAO" method="createProposal" sendArgs={{gas: 300000 }}/>
     </Box>
     <Box p={2} width={1/3} color="black" bg="white">
-    <strong>Vote for CommunityProposal</strong>
+    <h2>Step 4: Vote for CommunityProposal</h2>
     <p>Ideas are nothing if they dont come to fruition. Cast your vote here - you must be whitelisted</p>
     <p> Ticking the box indicates a YES, leaving it blank indicates a NO</p>
       <ContractForm contract="CommunityDAO" method="vote" sendArgs={{gas: 300000 }}/>
