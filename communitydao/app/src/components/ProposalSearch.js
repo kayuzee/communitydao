@@ -1,14 +1,16 @@
 import React from "react";
 import { ContractData } from "@drizzle/react-components";
 import { Input, Button } from 'rimble-ui';
+
+
 class ProposalSearch extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: []};
+      this.state = {value: 'undefined', mode:'no_proposals'};
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
-  
+
     handleChange(event) {
       this.setState({value: event.target.value});
     }
@@ -19,6 +21,13 @@ class ProposalSearch extends React.Component {
     }
   
     render() {
+      if(this.state.mode=== 'no_proposals'){
+        return(
+          <div>
+            <strong>No Proposals</strong>
+            </div>
+        );
+      } else {
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
@@ -26,11 +35,12 @@ class ProposalSearch extends React.Component {
           </label>
           <Button type="submit" value="Submit">Submit</Button>
          
-          <ContractData contract="CommunityDAO" method="proposals" methodArgs={[ this.state.value ]} />
+          <ContractData contract="CommunityDAO" method="getProposal" methodArgs={[ this.state.value ]} />
         </form>
         
         
       );
+      }
     }
   }
   export default ProposalSearch; // Don’t forget to use export default!

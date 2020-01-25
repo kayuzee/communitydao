@@ -86,6 +86,11 @@ contract CommunityDAO is Ownable {
     
         //nonDeletedSubmissions += 1;
     }
+    function getProposal(uint256 _proposalId) public view returns (string memory description, int256 votes){
+        require(proposals.length > 0, "Must have at least one proposal");
+        return (proposals[_proposalId].description,proposals[_proposalId].currentResult);
+    }
+    
 
     // Functions to change fees
 
