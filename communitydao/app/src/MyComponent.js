@@ -4,7 +4,7 @@ import {
   ContractData,
   ContractForm,
 } from "@drizzle/react-components";
-import { Card,Flex, Box } from 'rimble-ui';
+import { Flex, Box } from 'rimble-ui';
 import LiteAccountData from "./components/LiteAccountData";
 import Contract_Form from "./components/Contract_Form";
 import SubmissionSearch from "./components/SubmissionSearch";
@@ -87,51 +87,43 @@ export default ({ accounts }) => (
       <ContractData contract="CommunityDAO" method="getAllSubmissionHashes" />
       <p></p>
     </Box>
-    <Box p={3} width={1 / 3} color="white" bg="black">
+    <Box p={3} width={1 / 3} color="black" bg="white">
     <strong>Idea Details </strong>
       <p></p>
-      What do you mean you cant read a hash? Click on a hash on the left to see the submission details
+      What do you mean you cant read a hash? Copy a hash from the left into the box and it will load the details
+      <p> Only copying and pasting will work or you will have to refresh</p>
       <SubmissionSearch />
   </Box>
 
   </Flex>
   
   </div>
-  <div className= "section" >
-    <Box p={3} width={1} color="salmon" bg="black">
-      
-    </Box>
-    <Box p={2} width={1} color="salmon" bg="white"></Box>
-    <Box p={3} width={1} color="salmon" bg="black">
-    
-      </Box>
   
-  </div>
-  <div className = "section">
-    <Flex>
-    <Box p={3} width={1 / 2} color="salmon" bg="black">
-    <strong>Create Community Proposal</strong>
+  <div className= "normal" >
+  <Flex>
+    <Box p={3} width={1/3} color="white" bg="blue">
+    <strong>Step 3: Create Community Proposal</strong>
     <p> See an idea you like? Put it up for a proposal</p>
-      <ContractForm contract="CommunityDAO" method="createProposal" sendArgs={{gas: 300000 }}/>
-      <p></p>
+    <p> Use the hash of the idea you like, add a description and then click submit</p>
+    <p> For example, if you wanted a new community garden you would put the hash of '0xe8d82b8bb7bc5a536d4f0bb8578a3eb6567a023018fa203c7a37a7482ba14087' and a description of 'I vote for a new garden in Q4 2020'</p>
+      <Contract_Form contract="CommunityDAO" method="createProposal" sendArgs={{gas: 300000 }}/>
     </Box>
-    <Box p={3} width={1 / 2} color="white" bg="salmon">
+    <Box p={2} width={1/3} color="white" bg="blue">
     <strong>Vote for CommunityProposal</strong>
     <p>Ideas are nothing if they dont come to fruition. Cast your vote here - you must be whitelisted</p>
+    <p> Ticking the box indicates a YES, leaving it blank indicates a NO</p>
       <ContractForm contract="CommunityDAO" method="vote" sendArgs={{gas: 300000 }}/>
       <p></p>
     </Box>
-  </Flex>
-  </div>
-  <div className="section">
-    <Card bg="blue" color="white" maxWidth={"700px"}>
-      <strong>Get proposal details (beta - coming soon!)</strong>
-      <p>Right now - this just shows for the first item in the index</p>
+    <Box p={3} width={1/3} color="white" bg="blue">
+    <strong>Get proposal details</strong>
+      <p>You can search by the ID of the proposals</p>
       <p></p>
-      {/*<ProposalSearch />*/} 
-      
-    </Card>
-    </div> 
+      <ProposalSearch />
+      </Box>
+      </Flex>
+  
+  </div>
 
   </div>
 );
