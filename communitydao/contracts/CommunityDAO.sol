@@ -137,7 +137,7 @@ contract CommunityDAO is Ownable {
     
     //Voting function
     function vote(uint256 _proposalId, bool _vote, string memory _description) public returns (int256) {
-        //require(whitelist[msg.sender], "Must be whitelisted");
+        require(whitelist[msg.sender], "Must be whitelisted");
         //require(!blacklist[msg.sender], "Must not be blacklisted");
     
         Proposal storage p = proposals[_proposalId];
@@ -155,7 +155,10 @@ contract CommunityDAO is Ownable {
         p.voters[msg.sender] = true;
     
         //p.currentResult = (_vote) ? p.currentResult + int256(_votePower) : p.currentResult - int256(_votePower); //TO FIX
-        p.currentResult = (_vote) ? p.currentResult + 1 : p.currentResult - 1; // IS THIS THE RIGHT WAY TO COUNT FROM BOOL?
+        p.currentResult = (_vote) ? p.currentResult + 1 : p.currentResult - 1;
+        if (p.currentResult == 3) {
+            p.executed = true; 
+        } 
         emit Voted(msg.sender, _vote, _description);
         return p.currentResult;
         }

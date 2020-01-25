@@ -110,6 +110,9 @@ export default ({ accounts }) => (
     <Box p={2} width={1/3} color="black" bg="white">
     <h2>Step 4: Vote for CommunityProposal</h2>
     <p>Ideas are nothing if they dont come to fruition. Cast your vote here - you must be whitelisted</p>
+    <p> There are two days to vote on a submission once it is created</p>
+    <strong>3 votes are needed to pass</strong>>
+    <p>A YES vote counts as +1, a NO vote counts as -1</p>
     <p> Ticking the box indicates a YES, leaving it blank indicates a NO</p>
       <ContractForm contract="CommunityDAO" method="vote" sendArgs={{gas: 300000 }}/>
       <p></p>

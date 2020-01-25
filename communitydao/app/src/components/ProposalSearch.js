@@ -39,6 +39,7 @@ class ProposalSearch extends React.Component {
           <Button type="submit" value="Submit">Submit</Button>
          
           <ContractData contract="CommunityDAO" method="getProposal" methodArgs={[ this.state.value ]} />
+          {/*<ContractData contract="CommunityDAO" method="proposals" methodArgs={[ this.state.value ]} /> */}
         </form>
         
         
