@@ -1,6 +1,6 @@
 import React from "react";
 import { ContractData } from "@drizzle/react-components";
-
+import { Input } from 'rimble-ui';
 class SubmissionSearch extends React.Component {
     constructor(props) {
       super(props);
@@ -24,6 +24,7 @@ class SubmissionSearch extends React.Component {
           <label>
             <p></p>
            Submission Hash
+           <Input type="search" required={true} placeholder="e.g. Ethereum" />
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
           <input type="submit" value="Submit" />
