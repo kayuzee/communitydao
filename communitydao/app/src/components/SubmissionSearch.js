@@ -24,7 +24,7 @@ class SubmissionSearch extends React.Component {
           <label>
             <p></p>
            Submission Hash
-           <Input type="search" required={true} placeholder="e.g. Ethereum" value={this.state.value} onChange={this.handleChange}/>
+           <Input type="search" required={true} placeholder="e.g. 0x7d..." value={this.state.value} onChange={this.handleChange}/>
            
           </label>
           

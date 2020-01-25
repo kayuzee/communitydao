@@ -101,25 +101,25 @@ export default ({ accounts }) => (
   
   <div className= "normal" >
   <Flex>
-    <Box p={3} width={1/3} color="white" bg="blue">
+    <Box p={3} width={1/3} color="black" bg="white">
     <strong>Step 3: Create Community Proposal</strong>
     <p> See an idea you like? Put it up for a proposal</p>
     <p> Use the hash of the idea you like, add a description and then click submit</p>
     <p> For example, if you wanted a new community garden you would put the hash of '0xe8d82b8bb7bc5a536d4f0bb8578a3eb6567a023018fa203c7a37a7482ba14087' and a description of 'I vote for a new garden in Q4 2020'</p>
       <Contract_Form contract="CommunityDAO" method="createProposal" sendArgs={{gas: 300000 }}/>
     </Box>
-    <Box p={2} width={1/3} color="white" bg="blue">
+    <Box p={2} width={1/3} color="black" bg="white">
     <strong>Vote for CommunityProposal</strong>
     <p>Ideas are nothing if they dont come to fruition. Cast your vote here - you must be whitelisted</p>
     <p> Ticking the box indicates a YES, leaving it blank indicates a NO</p>
       <ContractForm contract="CommunityDAO" method="vote" sendArgs={{gas: 300000 }}/>
       <p></p>
     </Box>
-    <Box p={3} width={1/3} color="white" bg="blue">
+    <Box p={3} width={1/3} color="black" bg="white">
     <strong>Get proposal details</strong>
       <p>You can search by the ID of the proposals</p>
       <p></p>
-      <ProposalSearch />
+     <ProposalSearch />
       </Box>
       </Flex>
   
