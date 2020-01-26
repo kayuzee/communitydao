@@ -1,21 +1,20 @@
 pragma solidity ^0.5.0;
 
-//import "../node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol"; //OLD
-//import "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol"; //OLD
+
 //import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
 //import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/ownership/Ownable.sol";
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
-import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol"; //If using remix, comment this and use line 4
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol"; //If using remix, comment this and use line 5
+/** @title CommunityDAO */
 contract CommunityDAO is Ownable {
+    //Varaiables
     using SafeMath for uint256;
-
     mapping(address => bool) whitelist;
     uint256 public whitelistedNumber = 0;
     mapping(address => bool) blacklist;
-
+    uint256 public proposalCount = 0;
 
     //Submission Fees
-    
     uint256 public whitelistfee = 10000000000000000; // in Wei, this is 0.01 ether
     uint256 public submissionZeroFee = 1000; //ADDED
 
@@ -29,16 +28,14 @@ contract CommunityDAO is Ownable {
     event ProposalAdded(uint256 id, uint8 typeFlag, bytes32 hash, string description, address submitter);
     event ProposalExecuted(uint256 id);
     event Voted(address voter, bool vote, string justification);
-    mapping (bytes32 => Submission) public submissions; //REORG
-    bytes32[] public submissionIndex; //REORG
+    mapping (bytes32 => Submission) public submissions;  
 
+    //Structs
     struct Submission {
     bytes content;
     uint256 index;
     address submitter;
     }
-    
-    // Structs for Voting function
     struct Proposal {
     string description;
     bool executed;
@@ -51,19 +48,20 @@ contract CommunityDAO is Ownable {
     Vote[] votes;
     address submitter;
     }
-
-    Proposal[] public proposals;
-    uint256 public proposalCount = 0;
-
-    
     struct Vote {
-        bool inSupport;
-        address voter;
-        string justification;
+    bool inSupport;
+    address voter;
+    string justification;
     }
+    //Arrays
+    Proposal[] public proposals;
+    bytes32[] public submissionIndex;
+
     
-    // TO FIX? Bytes as call data needs to be put in a special way https://ethereum.stackexchange.com/questions/48092/solidity-error-when-encoding-arguments-to-call-a-function-with-bytes32-type-para
-    function createSubmission(bytes calldata _content) external payable { 
+        /** @dev Creates a hash of a input that can be used to create a proposal. Input is in Hex
+            * @param _content Content in Hex format.
+            */
+          function createSubmission(bytes calldata _content) external payable { 
         require(whitelist[msg.sender], "Must be whitelisted");
         require(!blacklist[msg.sender], "Must not be blacklisted");
         //uint256 fee = calculateSubmissionFee();
@@ -86,28 +84,40 @@ contract CommunityDAO is Ownable {
     
         //nonDeletedSubmissions += 1;
     }
+
+     /** @dev Gets a few of the parameters from the Proposal struct
+        * @param _proposalId ID of the proposal
+        * @return description String of the description submitted when creating a proposal
+        * @return votes The number of votes (currentResult) that a proposal has
+        * @return passed Whether the proposal has been executed. This happens when the votes reach 3
+        */
     function getProposal(uint256 _proposalId) public view returns (string memory description, int256 votes, bool passed ){
         require(proposals.length > 0, "Must have at least one proposal");
         return (proposals[_proposalId].description,proposals[_proposalId].currentResult, proposals[_proposalId].executed);
     }
     
 
-    // Functions to change fees
-
+    /** @dev allows the Owner to change the fees required for whitelisting, this can only be made lower
+        * @param _fee Whitelisting fee
+        */
     function changewhitelistfee(uint256 _fee) onlyOwner external {
         require(_fee < whitelistfee, "New fee must be lower than old fee.");
         whitelistfee = _fee;
         emit WhitelistFeeChanged(_fee);
     }
-
+    /** @dev Allows owner to lower submission fee
+        * @param _fee Submission fee
+        */
     function lowerSubmissionFee(uint256 _fee) onlyOwner external {
         require(_fee < submissionZeroFee, "New fee must be lower than old fee.");
         submissionZeroFee = _fee;
         emit SubmissionFeeChanged(_fee);
     }
     
-     // Functions to Whitelist address
-     //TO DO - Blacklisting/ rmeoving? 
+    /** @dev Whitelists an address. All whitelisted addresses can whitelist others.
+        * @param _add address to add
+        * TO DO: Blacklisting 
+        */
     function whitelistAddress(address _add) public payable {
         require(!whitelist[_add], "Candidate must not be whitelisted.");
         require(!blacklist[_add], "Candidate must not be blacklisted.");
@@ -121,21 +131,34 @@ contract CommunityDAO is Ownable {
             // buyTokens(_add, msg.value.sub(whitelistfee));
         }
     }
-    
-    // Get indexes/submission info
+
+     /** @dev Given a hash, returns the corresponding submission details (content) and submitter
+        * @param hash hash created when a submission was created
+        * @return content Content from submission - converted to a string
+        * @return submitter Address that created the submission
+        */
     function getSubmission(bytes32 hash) public view returns (string memory content, address submitter) {
         return (string(submissions[hash].content), submissions[hash].submitter);
     }
 
+     /** @dev Gets all submission hashes
+        * @return returns submissionIndex Array
+        */
     function getAllSubmissionHashes() public view returns (bytes32[] memory) {
         return submissionIndex;
     }
-
+     /** @dev Gets count of submissions
+        */
     function getSubmissionCount() public view returns (uint256) {
         return submissionIndex.length;
     }
     
-    //Voting function
+    /** @dev Voting function to vote on a proposal, must be whitelisted. Proposal executed when current result reaches 3
+        * @param _proposalId Id index of proposal
+        * @param _vote false = a NO vote, true = YES vote, this creates a counter for the currentresult
+        * @param _description a extra field for a member to add a comment to their vote
+        * @return returns submissionIndex Array
+        */
     function vote(uint256 _proposalId, bool _vote, string memory _description) public returns (int256) {
         require(whitelist[msg.sender], "Must be whitelisted");
         //require(!blacklist[msg.sender], "Must not be blacklisted");
@@ -163,8 +186,10 @@ contract CommunityDAO is Ownable {
         return p.currentResult;
         }
     
-    //Proposal function
-    
+    /** @dev creates a proposal
+        * @param _hash Hash of submission
+        * @param _description Description of the proposal e.g 'New garden proposal Q4 2019'
+        */
     function createProposal(bytes32 _hash, string memory _description) public {
 
         //require(submissionExists(_hash), "Submission must exist to be deletable");
@@ -183,7 +208,8 @@ contract CommunityDAO is Ownable {
         emit ProposalAdded(proposalId, 1, _hash, _description, msg.sender);
         proposalCount = proposalId + 1;
     }
-    //Fallback
+    /** @dev Fallback
+        */
     function() external payable {
 
         if (!whitelist[msg.sender]) {

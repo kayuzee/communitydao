@@ -1,6 +1,7 @@
 # CommunityDAO
 
 CommunityDAO is a simple DAO for organizing community ideas.
+![Screenshot 1](Headline.png)
 
 - [CommunityDAO](#communitydao)
   - [Introduction](#introduction)
@@ -48,19 +49,54 @@ The **Community** contract manages a few entities:
 
 The diagram below depicts the contract and its functions. It uses the Safe Math and Ownable libraries from OpenZepplin.
 
-![CommunityDAO Contract Map](ContractMap.svg)
+![CommunityDAO Contract Map](ContractMap.png)
 
-Here are some sample screenshots:
-![Screenshot 2](screen2.png)
-![Screenshot 1](screen1.png)
+Here is a sample screenshot:
+![Screenshot 1](CommunityDAO_Preview.png)
 
 
 ## Installation
 
-The source code of at ... 
+The source code of CommunityDAO can be found on [Github](https://github.com/kayuzee/communitydao)
 
-Truffle devevelop
-etc
+1. The following instructions assume that you are using a *nix-like OS (e.g. Linux, macOS etc.) from its command-line and that Git is already installed.
+2. Download and install the latest Node.js release for your OS according to the instructions found at https://nodejs.org. Avoid installing Node.js with sudo in order to avoid priviledge issues later on when installing packages and dependencies. On macOS, preferrably install it using the Homebrew package manager found on https://brew.sh.
+3. Install Truffle.
+
+   * For more information, follow the instructions found at https://truffleframework.com/docs/truffle/getting-started/installation.  
+`$ npm install truffle -g`
+4. Install Ganache CLI.
+
+   * For more information, follow the instructions found at https://truffleframework.com/docs/ganache/quickstart.
+`$ npm install ganache-cli -g`
+5. Go to a directory of your preference in your computer (e.g. ~/Desktop).
+6. Download or clone the CommunityDAO repo to your computer.
+7. Go to the new directory.
+8. `$ cd communitydao
+9. The file structure will be like this:
+.
++-- _app
+|   +-- build
+|   +-- public
+|   +-- src
++-- _contracts
++-- _migrations
+|   +-- test 
+
+10. Install packages
+`$ npm install'
+11. Run Truffle Develop
+`$ truffle develop'
+  A list of accounts will be created and test network launched
+12. In the Truffle Development Console compile the contracts
+`truffle(develop)> compile`
+13. Migrate the contracts
+`truffle(develop)> migrate`
+14. In a SEPERATE terminal window in the same directory go to the app folder
+`$ cd app`
+15. Run the React app
+`npm run start'
+The app will be running at http://localhost:3000/
 
 ### Installation of the DApp (production build)
 
@@ -77,7 +113,7 @@ A list of possible enhancements for this contract are:
 - Allow for hex to string conversions for ease of use
 - Drizzle toast for events that are fired
 - Coverting the proposals into a table with time stamps, time remaining and votes
-- Adding a quorum requirment for votes
+- Creating a factory contract that allows communities to create their own DAOs without cloning a repo
 
 ---
 
@@ -85,8 +121,8 @@ A list of possible enhancements for this contract are:
 
 - [x] A README.md that explains the project
   - [x] What does it do?
-  - [ ] How to set it up.
-    - [ ] How to run a local development server.
+  - [x] How to set it up.
+    - [x] How to run a local development server.
 - [x] It should be a [Truffle project](https://truffleframework.com/docs/truffle/getting-started/creating-a-project).
   - [x] All contracts should be in a `contracts` directory.
     - [x] `truffle compile` should successfully compile contracts.
@@ -94,13 +130,13 @@ A list of possible enhancements for this contract are:
     - [x] `truffle migrate` should successfully migrate contracts to a locally running `ganache-cli` test blockchain on port `8454`.
   - [x] All tests should be in a `tests` directory.
     - [x] `truffle test` should migrate contracts and run the tests.
-- [ ] Smart contract code should be commented according to the [specs in the documentation](https://solidity.readthedocs.io/en/v0.5.2/layout-of-source-files.html#comments).
-- [ ] Create at least 5 tests for each smart contract.
-  - [ ] Write a sentence or two explaining what the tests are covering, and explain why those tests were written.
+- [x] Smart contract code should be commented according to the [specs in the documentation](https://solidity.readthedocs.io/en/v0.5.2/layout-of-source-files.html#comments).
+- [x] Create at least 5 tests for each smart contract.
+  - [x] Write a sentence or two explaining what the tests are covering, and explain why those tests were written.
 - [x] A development server to serve the front-end interface of the application.
   - [x] It can be something as simple as the [lite-server](https://www.npmjs.com/package/lite-server) used in the [Truffle Pet Shop tutorial](https://truffleframework.com/tutorials/pet-shop).
-- [ ] A document [design_pattern_decisions.md](design_pattern_decisions.md) that explains the design patterns chosen.
-- [ ] A document [avoiding_common_attacks.md](avoiding_common_attacks.md) that explains what measures were taken to ensure that the contracts are not susceptible to common attacks.
+- [x] A document [design_pattern_decisions.md](design_pattern_decisions.md) that explains the design patterns chosen.
+- [x] A document [avoiding_common_attacks.md](avoiding_common_attacks.md) that explains what measures were taken to ensure that the contracts are not susceptible to common attacks.
 - [ ] Implement/use a library or an EthPM package.
   - [ ] If the project does not require a library or an EthPM package, demonstrate how it would do that in a contract called `LibraryDemo.sol`.
 - [ ] Develop your application and run the other projects during evaluation in a VirtualBox VM running Ubuntu 16.04 to reduce the chances of runtime environment variables.
@@ -120,9 +156,9 @@ A list of possible enhancements for this contract are:
 
 ### Testing
 
-- [ ] Write 5 tests for each contract you wrote;
+- [x] Write 5 tests for each contract you wrote;
   - [x] Solidity **or** JavaScript.
-- [ ] Explain why you wrote those tests;
+- [x] Explain why you wrote those tests;
   - [x] Tests run with `truffle test`.
 
 ### Design Patterns
