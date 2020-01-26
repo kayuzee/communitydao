@@ -21,6 +21,8 @@ CommunityDAO is a simple DAO for organizing community ideas.
     - [Deployment](#deployment)
     - [Stretch](#stretch)
 
+A video demo is here: https://youtu.be/z2wVtiyzw_U
+
 ## Introduction
 
 **CommunityDAO** is a standalone smart contract that can be used to run a simple Decentralized Autonomour Organization for a community of people.
@@ -104,7 +106,7 @@ TO DO
 
 ### Deployment to Rinkeby
 
-- TO DO
+- Contract is deployed to Rinkeby at 0x45fddc4cde82bf91d8bf24e027713f0bddf71886
 
 ## Enhancements
 
