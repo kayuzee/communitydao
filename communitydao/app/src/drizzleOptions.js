@@ -4,7 +4,7 @@ import CommunityDAO from "./contracts/CommunityDAO.json"
 const options = {
   web3: {
     block: false,
-    customProvider: new Web3("ws://localhost:8545"),
+  customProvider: new Web3("ws://localhost:8545"), /* use window.web3.currentProvider for metamask */
   },
   contracts: [CommunityDAO],
   events: {
