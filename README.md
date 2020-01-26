@@ -164,13 +164,13 @@ A list of possible enhancements for this contract are:
 ### Design Patterns
 
 - [ ] Implement a circuit breaker (emergency stop) pattern.
-- [ ] What other design patterns have you used / not used?
-  - [ ] Why did you choose the patterns that you did?
+- [x] What other design patterns have you used / not used?
+  - [x] Why did you choose the patterns that you did?
   - [ ] Why not others?
 
 ### Security Tools / Common Attacks
 
-- [ ] Explain what measures you have taken to ensure that your contracts are not susceptible to common attacks.
+- [x] Explain what measures you have taken to ensure that your contracts are not susceptible to common attacks.
 
 ### Use a Library or Extend a Contract
 
@@ -178,10 +178,10 @@ A list of possible enhancements for this contract are:
 
 ### Deployment
 
-- [ ] Deploy your application onto one of the test networks.
-- [ ] Include a document called [deployed_addresses.txt](deployed_addresses.txt) that describes where your contracts live (which testnet and address).
-- [ ] Students can verify their source code using Etherscan https://etherscan.io/verifyContract for the appropriate testnet.
-- [ ] Evaluators can check by getting the provided contract ABI and calling a function on the deployed contract at https://www.myetherwallet.com/#contracts or checking the verification on Etherscan.
+- [x] Deploy your application onto one of the test networks.
+- [x] Include a document called [deployed_addresses.txt](deployed_addresses.txt) that describes where your contracts live (which testnet and address).
+- [x] Students can verify their source code using Etherscan https://etherscan.io/verifyContract for the appropriate testnet.
+- [x] Evaluators can check by getting the provided contract ABI and calling a function on the deployed contract at https://www.myetherwallet.com/#contracts or checking the verification on Etherscan.
 
 ### Stretch
 
