@@ -21,7 +21,7 @@ CommunityDAO is a simple DAO for organizing community ideas.
     - [Deployment](#deployment)
     - [Stretch](#stretch)
 
-A video demo is here: https://youtu.be/z2wVtiyzw_U
+A video demo is here: https://youtu.be/mI2Z5bdkMEQ
 
 ## Introduction
 
