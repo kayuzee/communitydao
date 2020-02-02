@@ -74,7 +74,7 @@ The source code of CommunityDAO can be found on [Github](https://github.com/kayu
 5. Go to a directory of your preference in your computer (e.g. ~/Desktop).
 6. Download or clone the CommunityDAO repo to your computer.
 7. Go to the new directory.
-8. `$ cd communitydao
+8. `$ cd communitydao`
 9. The file structure will be like this:
 .
 +-- _app
@@ -139,8 +139,8 @@ A list of possible enhancements for this contract are:
   - [x] It can be something as simple as the [lite-server](https://www.npmjs.com/package/lite-server) used in the [Truffle Pet Shop tutorial](https://truffleframework.com/tutorials/pet-shop).
 - [x] A document [design_pattern_decisions.md](design_pattern_decisions.md) that explains the design patterns chosen.
 - [x] A document [avoiding_common_attacks.md](avoiding_common_attacks.md) that explains what measures were taken to ensure that the contracts are not susceptible to common attacks.
-- [ ] Implement/use a library or an EthPM package.
-  - [ ] If the project does not require a library or an EthPM package, demonstrate how it would do that in a contract called `LibraryDemo.sol`.
+- [x] Implement/use a library or an EthPM package.
+  - [x ] If the project does not require a library or an EthPM package, demonstrate how it would do that in a contract called `LibraryDemo.sol`.
 - [ ] Develop your application and run the other projects during evaluation in a VirtualBox VM running Ubuntu 16.04 to reduce the chances of runtime environment variables.
 
 ---
@@ -176,7 +176,7 @@ A list of possible enhancements for this contract are:
 
 ### Use a Library or Extend a Contract
 
-- [ ] Via EthPM or write your own.
+- [x] Via EthPM or write your own.
 
 ### Deployment
 
